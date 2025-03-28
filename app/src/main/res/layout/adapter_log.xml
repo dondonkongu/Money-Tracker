@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Buy Iphone 11"/>
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="+ 123456"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/actionItem"
+        android:layout_alignParentRight="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_more_horiz_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddTaskLogActivity">
+    <EditText
+        android:id="@+id/editAddTaskName"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Task name"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/edit_text_border"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/editAddMoney"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Money"
+        android:textColor="@color/colorPrimary"
+        android:inputType="number"
+        android:textSize="16sp"/>
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/stickySwitch"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:ss_animationDuration="300"
+        app:ss_iconPadding="18dp"
+        app:ss_iconSize="22dp"
+        app:ss_leftIcon="@drawable/ic_add_24"
+        app:ss_leftText="ADD"
+        app:ss_rightIcon="@drawable/baseline_remove_24"
+        app:ss_rightText="SUBTRACT"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="#005431"
+        app:ss_switchColor="#8cc63f"
+        app:ss_textColor="#005431"
+        app:ss_textSize="12sp"
+        app:ss_animationType="line"/>
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:text="Add task"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#005431"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        />
+
+</LinearLayout>
